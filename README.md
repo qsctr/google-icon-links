@@ -1,2 +1,2 @@
-This is a README file.
-I will add more stuff soon.
+The icons are from Polymer's core-icons set.
+The website is hosted on Github Pages.
