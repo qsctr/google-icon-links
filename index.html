@@ -11,21 +11,20 @@
     <link rel="import" href="bower_components/core-header-panel/core-header-panel.html">
     <link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
     <link rel="import" href="bower_components/core-icons/core-icons.html">
-    <link rel="import" href="bower_components/font-roboto/roboto.html">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
     <title>
       google-icon-links
     </title>
     <style>
       body{
-        font-family: Roboto, Arial, Sans-Serif;
-        font-weight: 100;
+        font-family: 'Roboto', Arial, Sans-Serif;
       }
-      core-toolbar{
-        background-color: #03A9F4;
+      h1{
         color: white;
         font-size: 30px;
+        font-weight: 100;
       }
-      core-icon{
+      .content a core-icon{
         color: black;
       }
       .big{
@@ -40,17 +39,44 @@
       .topbar{
         color: white;
       }
+      h2{
+        font-weight: 300;
+        margin: 15px;
+        font-size: 25px;
+      }
+      .blue{
+        background-color: #03A9F4;
+        color: white;
+      }
+      p{
+        margin: 20px;
+        font-size: 18px;
+        font-weight: 400px;
+      }
     </style>
   </head>
-  <body>
+  <body fullbleed>
     <core-drawer-panel forceNarrow>
-      <core-toolbar drawer>
-        google-icon-links
-      </core-toolbar>
-      <core-header-panel main>
-        <core-toolbar>
-          <core-icon class="topbar" icon="menu" core-drawer-toggle></core-icon>
+      <core-header-panel drawer class="blue">
+        <core-toolbar class="blue">
+        <h1>
           google-icon-links
+        </h1>
+        </core-toolbar>
+        <div vertical layout>
+          <h2>
+            About
+          </h2>
+          <p>blah</p>
+          <p>blah</p>
+        </div>
+      </core-header-panel>
+      <core-header-panel main>
+        <core-toolbar class="blue">
+          <core-icon icon="menu" core-drawer-toggle></core-icon>
+          <h1>
+            google-icon-links
+          </h1>
         </core-toolbar>
         <div class="content" horizontal wrap justified layout>
           <a href="http://www.google.com/wallet">
