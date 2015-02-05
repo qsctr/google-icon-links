@@ -31,7 +31,7 @@
         width: 100px;
         height: 100px;
       }
-      a{
+      .content a{
         width: 100px;
         height: 100px;
         padding: 20px;
@@ -41,7 +41,6 @@
       }
       h2{
         font-weight: 300;
-        margin: 15px;
         font-size: 25px;
       }
       .blue{
@@ -49,9 +48,19 @@
         color: white;
       }
       p{
-        margin: 20px;
         font-size: 18px;
         font-weight: 400px;
+      }
+      .about{
+        margin: 10px 20px 10px 20px;
+      }
+      .about p{
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .about a{
+        color: white;
+        margin-left: 20px;
       }
     </style>
   </head>
@@ -64,11 +73,40 @@
         </h1>
         </core-toolbar>
         <div vertical layout>
-          <h2>
+          <p class="about">
+            This is a page with some random icons that link to google product webpages.
+          </p>
+          <h2 class="about">
             About
           </h2>
-          <p>blah</p>
-          <p>blah</p>
+          <div class="about" vertical layout>
+            <p>
+              This website was made using Google's Polymer Project.
+            </p>
+            <a href="http://www.polymer-project.org">
+              Polymer website
+            </a>
+            <a href="http://github.com/Polymer/polymer">
+              Polymer on Github
+            </a>
+            <p>
+              The icons are from Polymer's default set. More icon sets will be added in the future.
+            </p>
+            <a href="http://www.polymer-project.org/components/core-icons/demo.html">
+              All the icons
+            </a>
+          </div>
+          <div class="about" vertical layout>
+            <p>
+              The code for this website is on Github.
+            </p>
+            <a href="http://github.com/qsctr/google-icon-links">
+              Code on Github
+            </a>
+            <p>
+              This website is hosted on Github Pages.
+            </p>
+          </div>
         </div>
       </core-header-panel>
       <core-header-panel main>
