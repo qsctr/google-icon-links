@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
-    <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+    <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
     <link rel="import" href="bower_components/core-drawer-panel/core-drawer-panel.html">
     <link rel="import" href="bower_components/core-header-panel/core-header-panel.html">
     <link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
     <link rel="import" href="bower_components/core-icons/core-icons.html">
     <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+    <link rel="import" href="bower_components/paper-button/paper-button.html">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
     <title>
       google-icon-links
@@ -53,7 +54,10 @@
         font-weight: 400px;
       }
       .about{
-        margin: 10px 20px 10px 20px;
+        margin: 30px 20px 30px 20px;
+      }
+      .about-header{
+        margin: 0px 20px 0px 20px;
       }
       .about p{
         margin-top: 10px;
@@ -61,13 +65,19 @@
       }
       .about a{
         color: white;
-        margin-left: 20px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        text-align: center;
+      }
+      .about a paper-button{
+        background: white;
+        color: #03A9F4;
       }
     </style>
   </head>
   <body fullbleed>
     <core-drawer-panel forceNarrow>
-      <core-header-panel drawer class="blue">
+      <core-header-panel drawer class="blue" mode="scroll">
         <core-toolbar class="blue">
         <h1>
           google-icon-links
@@ -77,7 +87,7 @@
           <p class="about">
             This is a page with some random icons that link to google product webpages.
           </p>
-          <h2 class="about">
+          <h2 class="about-header">
             About
           </h2>
           <div class="about" vertical layout>
@@ -85,16 +95,22 @@
               This website was made using Google's Polymer Project.
             </p>
             <a href="http://www.polymer-project.org">
-              Polymer website
+              <paper-button>
+                Polymer website
+              </paper-button>
             </a>
             <a href="http://github.com/Polymer/polymer">
-              Polymer on Github
+              <paper-button>
+                Polymer on Github
+              </paper-button>
             </a>
             <p>
               The icons are from Polymer's default set. More icon sets will be added in the future.
             </p>
             <a href="http://www.polymer-project.org/components/core-icons/demo.html">
-              All the icons
+              <paper-button>
+                All the icons
+              </paper-button>
             </a>
           </div>
           <div class="about" vertical layout>
@@ -102,7 +118,9 @@
               The code for this website is on Github.
             </p>
             <a href="http://github.com/qsctr/google-icon-links">
-              Code on Github
+              <paper-button>
+                Code on Github
+              </paper-button>
             </a>
             <p>
               This website is hosted on Github Pages.
