@@ -1,9 +1,5 @@
 {
   "name": "google-icon-links",
-  "version": "0.0.0",
-  "description": "icon links to google products",
-  "main": "index.html",
-  "license": "MIT",
   "private": true,
   "ignore": [
     "**/.*",
